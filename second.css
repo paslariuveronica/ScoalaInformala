@@ -1,0 +1,81 @@
+html,
+body {
+  font-family: "Merriweather", sans-serif;
+  padding: 0;
+}
+.header {
+  display: flex;
+  background-color: #eeeeee;
+  height: 150px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: black;
+  font-size: 50px;
+  margin-right: 10px;
+}
+.paragraph {
+  text-align: center;
+  color: #9a9b9b;
+  font-size: 50px;
+}
+.container {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  display: grid;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 30px;
+  font-size: large;
+  text-align: left;
+}
+.name {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.email {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.subject {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.message {
+  grid-area: 1 / 2 / 4 / 3;
+}
+.submit {
+  background-color: #428bca;
+  color: white;
+  float: right;
+  border: #428bca;
+  border-radius: 5px;
+  height: 30px;
+}
+.socialmedia {
+  text-align: center;
+}
+.contact {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.facebook,
+.twitter,
+.instagram {
+
+  text-decoration: none;
+  color: #428bca;
+}
+@media (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+   
+  }
+}
